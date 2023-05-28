@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UNLIMITIIDD</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #E0F2F1;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 auto;
+      background-color: lightgray;
+      overflow: hidden;
+    }
+    
+    .profile-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    #social-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    #social-links a {
+      display: inline-block;
+      margin: 10px;
+    }
+    
+    #social-links img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    
+    #footer {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 12px;
+      color: white;
+    }
+    
+    .gif-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    
+    .gif-container img {
+      width: 150px;
+      height: 150px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function playGif() {
+      var gif = document.getElementById('gif');
+      gif.src = "https://media.tenor.com/6kAWyQm3SfYAAAAd/roblox.gif";
+    }
+    
+    function showDiscordNotification() {
+      alert("UNLIMITIIDD#3595");
+    }
+  </script>
+</head>
+<body>
+  <div id="header">
+    <h1>UNLIMITIIDD</h1>
+    <div class="profile-picture">
+      <img src="https://lh3.googleusercontent.com/63bO8oP99bGYwiBDv_wsXNPTbY8G798rpFDi1QaNbQW_8DDsdHcEklbsdRSuBrrRNegc1B1D8Msybvk-DTkcXVw5EiWxHbJyBS97gBes" alt="Foto de perfil">
+    </div>
+  </div>
+  
+  <div id="social-links">
+    <a href="https://open.spotify.com/user/thlaocgyr2r5kg9nqbl3ims29" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="Spotify">
+    </a>
+    <a href="https://www.tiktok.com/@unlimitiidd" target="_blank">
+      <img src="https://www.edigitalagency.com.au/wp-content/uploads/TikTok-icon-glyph.png" alt="TikTok">
+    </a>
+    <a href="https://instagram.com/unlimitiidd1/" target="_blank">
+      <img src="https://e7.pngegg.com/pngimages/953/528/png-clipart-instagram-icon-logo-desktop-computer-icons-instagram-miscellaneous-text.png" alt="Instagram" onclick="window.location.href = 'https://instagram.com/unlimitiidd1/';">
+    </a>
+    <a href="https://discord.com/" target="_blank" onclick="showDiscordNotification(); return false;">
+      <img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" alt="Discord">
+    </a>
+  </div>
+  
+  <div class="gif-container">
+    <img id="gif" src="https://media.tenor.com/6kAWyQm3SfYAAAAd/roblox.gif" alt="GIF" onclick="playGif()">
+  </div>
+  
+  <div id="footer">
+    lucia&lt;3
+  </div>
+</body>
+</html>
