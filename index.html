@@ -4,8 +4,8 @@
   <title>UNLIMITIIDD</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #E0F2F1;
+      font-family: "Arial", sans-serif;
+      background-color: #5C95BF;
       margin: 0;
       padding: 0;
     }
@@ -38,6 +38,17 @@
     #social-links a {
       display: inline-block;
       margin: 10px;
+      position: relative;
+    }
+    
+    #social-links a::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #333333;
     }
     
     #social-links img {
@@ -51,7 +62,7 @@
       bottom: 10px;
       right: 10px;
       font-size: 12px;
-      color: white;
+      color: black;
     }
     
     .gif-container {
@@ -63,6 +74,55 @@
       width: 150px;
       height: 150px;
       cursor: pointer;
+    }
+    
+    h1 {
+      font-family: "Bradley", sans-serif;
+      font-size: 48px;
+      color: #333333;
+      text-transform: uppercase;
+      margin-top: 0;
+    }
+    
+    /* Estilos Botón Slide Left */
+    .ov-btn-slide-left {
+      background: #fff; /* color de fondo */
+      color: #4741d7; /* color de fuente */
+      border: 2px solid #4741d7; /* tamaño y color de borde */
+      padding: 16px 20px;
+      border-radius: 3px; /* redondear bordes */
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      display: inline-block;
+    }
+    
+    .ov-btn-slide-left:hover {
+      color: #fff; /* color de fuente hover */
+    }
+    
+    .ov-btn-slide-left::after {
+      content: "";
+      background: #4741d7; /* color de fondo hover */
+      position: absolute;
+      z-index: -1;
+      padding: 16px 20px;
+      display: block;
+      top: 0;
+      bottom: 0;
+      left: -100%;
+      right: 100%;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+    }
+    
+    .ov-btn-slide-left:hover::after {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
     }
   </style>
   <script>
@@ -92,7 +152,7 @@
       <img src="https://www.edigitalagency.com.au/wp-content/uploads/TikTok-icon-glyph.png" alt="TikTok">
     </a>
     <a href="https://instagram.com/unlimitiidd1/" target="_blank">
-      <img src="https://e7.pngegg.com/pngimages/953/528/png-clipart-instagram-icon-logo-desktop-computer-icons-instagram-miscellaneous-text.png" alt="Instagram" onclick="window.location.href = 'https://instagram.com/unlimitiidd1/';">
+      <img src="https://png.pngtree.com/element_our/png_detail/20181011/instagram-social-media-icon-design-template-vector-png_127006.jpg" alt="Instagram">
     </a>
     <a href="https://discord.com/" target="_blank" onclick="showDiscordNotification(); return false;">
       <img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" alt="Discord">
